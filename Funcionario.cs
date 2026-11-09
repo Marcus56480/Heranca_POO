@@ -1,0 +1,21 @@
+namespace Heranca
+{
+    public abstract class Funcionario
+    {
+        public string? Nome { get; set; }
+
+        protected decimal Salario; /* Campo e Propriedade - Ambos são atributos 
+        - Campo: É um Atributo com menos recursos, não possui controles como propriedade (getters e setter) -    
+        - Propriedade: Atributo com mais controle 
+        */
+        public void Trabalhar()
+        {
+            Console.WriteLine($"O Funcionário {Nome} está executando atividades");
+        }
+
+        public Funcionario() // Metodo Construtor é o que possui o mesmo nome da classe 
+        {
+            
+        }
+    }
+}
