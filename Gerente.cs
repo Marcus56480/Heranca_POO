@@ -8,5 +8,19 @@ namespace Heranca
         {
             Console.WriteLine($"O gestor {Nome} de Codigo {Codigo} está gerenciando a equipe");
         }
+
+        public Gerente()
+        {
+            
+        }
+        public Gerente (string nome, decimal salario) : base(nome, salario)
+        {
+            
+        }
+
+        public void ExibirSalario()
+        {
+            Console.WriteLine(Salario);
+        }
     }
 }

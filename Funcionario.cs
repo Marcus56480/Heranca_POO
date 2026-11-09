@@ -13,9 +13,15 @@ namespace Heranca
             Console.WriteLine($"O Funcionário {Nome} está executando atividades");
         }
 
-        public Funcionario() // Metodo Construtor é o que possui o mesmo nome da classe 
+        public Funcionario()
         {
             
+        }
+        
+        public Funcionario(string? nome, decimal salario) // Metodo Construtor é o que possui o mesmo nome da classe 
+        {
+            Nome = nome;
+            Salario = salario;
         }
     }
 }
