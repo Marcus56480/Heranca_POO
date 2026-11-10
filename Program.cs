@@ -18,3 +18,9 @@ Gerente gerente2 = new Gerente
 };
 gerente2.DefinirSalario(2000m);
 gerente2.ExibirSalario();
+
+IPagamento p1 = new PagamentoPix();
+IPagamento p2 = new PagamentoCartao();
+
+p1.Pagar(100m);
+p2.Pagar(200m);
