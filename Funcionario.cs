@@ -8,7 +8,7 @@ namespace Heranca
         - Campo: É um Atributo com menos recursos, não possui controles como propriedade (getters e setter) -    
         - Propriedade: Atributo com mais controle 
         */
-        public void Trabalhar()
+        public virtual void Trabalhar()
         {
             Console.WriteLine($"O Funcionário {Nome} está executando atividades");
         }
@@ -23,5 +23,8 @@ namespace Heranca
             Nome = nome;
             Salario = salario;
         }
+
+        public abstract decimal CalcularBonus();
+    
     }
 }
